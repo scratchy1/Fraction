@@ -1,0 +1,11 @@
+public class FractionTest {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        Fraction bruch = new Fraction(1, 2);
+        Fraction bruch2 = new Fraction(2, 3);
+        Fraction f = bruch.multiplyBy(bruch2);
+        System.out.println("Ergebnis" + f.toString());
+    }
+}
+    
