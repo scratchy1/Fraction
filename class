@@ -1,0 +1,29 @@
+class Fraction {
+    int numerator;
+    int denominator;
+
+    Fraction(int numerator, int denominator) {
+        this.numerator = numerator;
+        this.denominator = denominator;
+        
+            if (denominator == 0) {
+                throw new IllegalArgumentException("...");
+            }
+         
+    }
+
+    public Fraction multiplyBy(Fraction f) {
+         
+        return new Fraction( (this.numerator*f.numerator),(this.denominator*f.denominator));
+       
+    }
+
+    public String toString() {
+
+        return  String.format("%s / %s ",numerator, denominator);
+        
+    }
+    
+}
+
+
